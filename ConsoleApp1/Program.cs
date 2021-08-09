@@ -33,17 +33,17 @@ namespace ConsoleApp1
 
 		public void FindGu(string gu_name)
 		{
-			int count = 0;
+			bool count = false;
 
 			for(int i =0; i < gus.Length; i++)
             {
 				if (gu_name == gus[i])
                 {
-					count = i;
+					count = true;
                 }
 			}
 
-			if(gu_name == gus[count])
+			if(count == true)
             {
 					Console.WriteLine(name + "광역시의 구입니다.");
 			}
@@ -74,7 +74,7 @@ namespace ConsoleApp1
 
 			incheon.CallCity();
 			incheon.PrintAllGu();
-			incheon.FindGu("대");
+			incheon.FindGu("미추홀");
 
 			daegu.name = "대구";
 			daegu.center_gu = "중구";
