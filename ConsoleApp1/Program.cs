@@ -45,7 +45,7 @@ namespace ConsoleApp1
 
 			if(count == true)
             {
-					Console.WriteLine(name + "광역시의 구입니다.");
+				Console.WriteLine(name + "광역시의 구입니다.");
 			}
 			else
 			{
